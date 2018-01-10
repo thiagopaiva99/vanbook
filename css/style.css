@@ -235,6 +235,68 @@ svg.animate path {
 	line-height: 1.4em;
 }
 
+
+.beneficios-section {
+	margin-top: 300px;
+}
+
+.beneficio {
+	max-width: 800px;
+	margin: 0 auto 100px auto;
+	padding: 0px;
+	position: relative;
+}
+
+.beneficio:after, .beneficio:before {
+	content: "";
+	display: table;
+}
+
+.beneficio:after {
+	clear: both;
+}
+
+.beneficio h2 {
+	margin: 0 10px;
+	width: calc(50% - 20px);
+	float: left;
+	font-size: 5em;
+	line-height: .8;
+	text-align: right;
+	text-transform: uppercase;
+	color: #02A6EB;
+	font-family: monospace;
+}
+
+.beneficio h2::before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 5px;
+	background: rgba(0,0,0,.05);
+	margin-bottom: 10px;
+}
+
+.beneficio p {
+	margin: 0 10px;
+	width: calc(50% - 20px);
+	float: left;
+	font-size: 1.1em;
+	line-height: 1.4;
+	padding-left: 40px;
+	color: rgba(0,0,0,.7);
+}
+
+.beneficio:nth-child(even) h2 {
+	text-align: left;
+}
+
+.beneficio:nth-child(even) p {
+	text-align: right;
+	padding-right: 40px;
+	padding-left: 0px;
+}
+
 .anime {
 	opacity: 0;
 	transform: translate3d(0px, -50px, 0px);
