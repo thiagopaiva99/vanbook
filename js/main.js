@@ -10,7 +10,14 @@ $('.modal').on('click', function(modal) {
 	}
 })
 
+// scroll animations
 $(window).on('scroll', () => {
 	let windowTop = $(this).scrollTop()
 	
+	$('.anime').each(function(){
+		if( windowTop > $(this).offset().top )
+			$(this).addClass('anime-init')		
+		else
+			$(this).removeClass('anime-init')
+	})
 })
