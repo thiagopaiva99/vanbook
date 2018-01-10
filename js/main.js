@@ -12,5 +12,5 @@ $('.modal').on('click', function(modal) {
 
 $(window).on('scroll', () => {
 	let windowTop = $(this).scrollTop()
-	console.log(windowTop)
+	
 })
