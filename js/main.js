@@ -15,9 +15,7 @@ $(window).on('scroll', () => {
 	let windowTop = $(this).scrollTop()
 	
 	$('.anime').each(function(){
-		if( windowTop > $(this).offset().top )
-			$(this).addClass('anime-init')		
-		else
-			$(this).removeClass('anime-init')
+		if( windowTop > $(this).offset().top - 400 )
+			$(this).addClass('anime-init')
 	})
 })
